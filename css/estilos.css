@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'shabby'; /*a name to be used later*/
+    src: url('../fonts/anothershabby.ttf'); /*URL to font*/
+}
+
+h1{
+	font-family: 'shabby' !important;
+}
+
+h2 h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#raya-izq{
+	height: 50vh; 
+	width: 60px; 
+	border-left: solid 20px #ffffff; 
+	border-top: solid 20px #ffffff; 
+	border-bottom: solid 20px #ffffff;
+	position: absolute;
+	top: 30vh;
+	left: 25vw;
+}
+
+#raya-der{
+	height: 50vh; 
+	width: 60px; 
+	border-right: solid 20px #ffffff; 
+	border-top: solid 20px #ffffff; 
+	border-bottom: solid 20px #ffffff;
+	position: absolute;
+	top: 30vh;
+	right: 25vw;
+}
+
+/*Parallax velovidades*/
+  .forefront-element {
+    -webkit-transform: translateZ(999px) scale(.7);
+    transform: translateZ(999px) scale(.7);
+    z-index: 1;
+  }
+
+  .base-element {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .background-element {
+    -webkit-transform: translateZ(-999px) scale(1.2);
+    transform: translateZ(-999px) scale(1.2);
+    z-index: 3;
+  }
+/*FIN EFECTO-------------*/
+
+  .img-header{
+  	z-index:;
+  	position: relative;
+  }
