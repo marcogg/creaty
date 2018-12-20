@@ -697,19 +697,22 @@
 
     <!--EFECTO PALABRA HEADER-->
     <script type="text/javascript">
-      function frase() {
-        setInterval(cambio, 1500);
-      }
-      function cambio(){
+
+      var servicios=["Marketing", "Desarrollo Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Ideas"];
         var texto;
         var i;
-        var servicios=["Marketing", "Desarrollo Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Ideas"];
-        
+
+      function frase() {
+
         for (i =0; i<servicios.length; i++) {
-          texto=servicios[i];
+          setInterval(leer, 1500);
+          function leer () {
+            texto=servicios[0 , 1 , 2];
           document.getElementById("palabra").innerHTML=texto;
+          }
+          
         }
-    }
+      }
     
 
 
