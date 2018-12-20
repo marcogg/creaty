@@ -9,6 +9,7 @@ h1{
 
 h2 h3{
 	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem !important;
 }
 
 #raya-izq{
@@ -33,6 +34,17 @@ h2 h3{
 	right: 25vw;
 }
 
+@media screen and (max-width: 768px){
+	#raya-izq{
+		height: 25vh;
+		left: 15vw;
+	}
+	#raya-der{
+		height: 25vh;
+		right: 15vw;
+	}
+}
+
 /*Parallax velovidades*/
   .forefront-element {
     -webkit-transform: translateZ(999px) scale(.7);
@@ -53,7 +65,48 @@ h2 h3{
   }
 /*FIN EFECTO-------------*/
 
+/*CHAVA-------------------*/
+@media screen and (max-width: 768px){
+	.chava{
+	height: 50%;
+  }
+}
   .img-header{
   	z-index:;
   	position: relative;
   }
+
+
+
+@media screen and (max-width: 768px){
+	.logo-header{
+	width: 180px;
+  }
+}
+@media screen and (min-width: 768px){
+	.logo-header{
+	width: 280px;
+  }
+}
+
+.servicios{
+	margin-top: 10%;
+}
+
+@media screen and (min-width: 768px){
+	.texto-banner{
+	position: absolute;
+	top: 35vh;
+	right: 20vw;
+	left: 20vw;
+	line-height: 1em;
+	text-align: center;
+	}
+} 
+
+#palabra{
+	font-family: 'shabby'; 
+	font-size: 3rem; 
+	line-height: 1em; 
+	margin-bottom: -2.5%;
+}
