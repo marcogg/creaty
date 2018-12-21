@@ -12,6 +12,10 @@ h2 h3{
 	font-size: 3rem !important;
 }
 
+h4 h5 h6{
+font-family: 'Titillium Web', sans-serif;
+}
+
 /*Parallax velovidades*/
   .forefront-element {
     -webkit-transform: translateZ(999px) scale(.7);
@@ -80,12 +84,24 @@ h2 h3{
 	.chava{
 	height: 50%;
   }
+  .img-header{
+  	z-index:50;
+  	position: relative;
+  	top: 0;
+  	right: 27vw;
+  	left: 0;
+  	max-height: 800px;
+  }
 }
+@media screen and (min-width: 768px){
   .img-header{
   	z-index:;
   	position: relative;
+  	top: 5vh;
+  	right: 0;
+  	left: 0;
   }
-
+}
 
 
 @media screen and (max-width: 768px){
