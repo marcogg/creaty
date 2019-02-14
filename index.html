@@ -57,13 +57,15 @@
     <header class="masthead background-element">
       <div class="container">
         <div class="intro-text mx-auto">
-          <img src="img/chava.png" class="chava img-header forefront-element">
+          <div class="imagen-chava">
+          <img src="img/chava.png" height="420" class="chava">
+          </div>
           <div class="row">
             <div id="raya-izq" class="col-lg-1 col-md-1"></div>
             <div class="tex-left texto-banner">
               <p id="palabra">Creatyvidad</p>
               <br>
-              <h2><span style="font-weight: 100;">para</span> tu empresa</h2>
+              <h2><span style="font-weight: 100;">para</span> que vean <span style="font-weight: 100;">TU EMPRESA</span></h2>
             </div>
             <div id="raya-der" class="col-lg-1 col-md-1 d-inline-block position-fixed base-element"></div>
           </div>
@@ -76,22 +78,23 @@
     <!-- Services -->
     <section id="services" class="servicios">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+        <div class="row mt-5">
+          <div class="col-md-2"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12 text-center">
             <h2 class="section-heading text-uppercase">Servicios</h2>
-            <h3 class="section-subheading text-muted">
               <h2 style="font-family: 'Titillium Web';">Pensando fuera de la caja</h2> 
-              Conjuntamos todas las áreas creativas en un solo lugar para que  tu empresa logre el impacto que necesitas para <span class="text-uppercase"><strong>vender más</strong></span></h3>
+              <p>Conjuntamos todas las áreas creativas en un solo lugar para que  tu empresa logre el impacto que necesitas para <span class="text-uppercase"><strong>vender más</strong></span></p>
           </div>
+          <div class="col-md-2"></div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center px-5">
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Digital</h4>
-            <p class="text-muted">Todo lo que tu empresa necesita en el mundo digital: logotipos, página web, redes sociales, videos, animaciones...</p>
+            <p class="text-muted">Todo lo que tu empresa necesita en el mundo digital: logotipos, páginas web, redes sociales, videos, animaciones y hasta Web Apps y aplicaciones móviles...</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -99,7 +102,33 @@
               <i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Publicidad</h4>
-            <p class="text-muted">Diseñamos estrategias digitales y </p>
+            <p class="text-muted">Diseñamos estrategias digitales y medios tradicionales ATL y BTL</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="far fa-smile fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Redes Sociales</h4>
+            <p class="text-muted">Generamos contenido relevante y de calidad para fidelizar a tus clientes y enamorarlos de tu marca.</p>
+          </div>
+        </div>
+                <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-pencil-ruler fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Arquitectura</h4>
+            <p class="text-muted">Ya sea para tu casa o para tu negocio, hacemos desde trazado de planos, hasta renderizado y renders fotorealistas, supervisión de obra y más</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Eventos</h4>
+            <p class="text-muted">Una junta de trabajo, una fiesta de fin de año, o un evento de lanzamiento, planeamos y gestionamos tus eventos con una dosis creativa. </p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -118,7 +147,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Portafolio</h2>
-            <h3 class="section-subheading text-muted">Nuestra misión es atender </h3>
+            <h3 class="section-subheading text-muted">Soluciones a </h3>
           </div>
         </div>
         <div class="row">
@@ -722,7 +751,7 @@
     
     $(function () {
   count = 0;
-  wordsArray = ["Marketing", "Diseño Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Web Apps","Videos", "Ideas" ];
+  wordsArray = ["Marketing", "Diseño Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Web Apps","Videos", , "Arquitectura", "Ideas" ];
   setInterval(function () {
     count++;
     $("#palabra").fadeOut(400, function () {

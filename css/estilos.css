@@ -16,6 +16,10 @@ h4 h5 h6{
 font-family: 'Titillium Web', sans-serif;
 }
 
+p{
+	font-family: 'Titillium Web', sans-serif;
+}
+
 /*Parallax velovidades*/
   .forefront-element {
     -webkit-transform: translateZ(999px) scale(.7);
@@ -70,7 +74,7 @@ font-family: 'Titillium Web', sans-serif;
 	#raya-der{
 		top: 25vh;
 		height: 30vh;
-		right: 35vw;
+		right: 30vw;
 		border-right: solid 10px #ffffff; 
 		border-top: solid 10px #ffffff; 
 		border-bottom: solid 10px #ffffff;
@@ -82,7 +86,9 @@ font-family: 'Titillium Web', sans-serif;
 /*CHAVA-------------------*/
 @media screen and (max-width: 768px){
 	.chava{
-	height: 50%;
+	position: relative;
+    top: 22vh;
+    left: 40vw;
   }
   .img-header{
   	z-index:50;
@@ -91,16 +97,21 @@ font-family: 'Titillium Web', sans-serif;
   	right: 27vw;
   	left: 0;
   	max-height: 800px;
+  	height: 30vh;
   }
 }
 @media screen and (min-width: 768px){
   .img-header{
-  	z-index:;
   	position: relative;
   	top: 5vh;
   	right: 0;
   	left: 0;
   }
+
+  .chava{
+	position: relative;
+	top: 5vh;
+}
 }
 
 
@@ -111,12 +122,13 @@ font-family: 'Titillium Web', sans-serif;
 }
 @media screen and (min-width: 768px){
 	.logo-header{
-	width: 280px;
+	width: 230px;
   }
 }
 
 .servicios{
 	margin-top: 10%;
+	padding-top: 150px;
 }
 
 @media screen and (min-width: 768px){
