@@ -184,6 +184,17 @@ header.masthead {
   height: 100vh;
 }
 
+.pintura {
+  text-align: center;
+  color: white;
+  background-image: url("../img/bg-expertise.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
