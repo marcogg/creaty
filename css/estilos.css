@@ -92,7 +92,7 @@ p{
   }
   .img-header{
   	z-index:50;
-  	position: relative;
+  	position: absolute;
   	top: 0;
   	right: 27vw;
   	left: 0;
