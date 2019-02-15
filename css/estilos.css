@@ -74,7 +74,7 @@ p{
 	#raya-der{
 		top: 25vh;
 		height: 30vh;
-		right: 30vw;
+		right: 15vw;
 		border-right: solid 10px #ffffff; 
 		border-top: solid 10px #ffffff; 
 		border-bottom: solid 10px #ffffff;
@@ -87,8 +87,9 @@ p{
 @media screen and (max-width: 768px){
 	.chava{
 	position: relative;
-    top: 22vh;
-    left: 40vw;
+    top: 30vh;
+    left: 0;
+    max-height: 400px;
   }
   .img-header{
   	z-index:50;
@@ -110,7 +111,8 @@ p{
 
   .chava{
 	position: relative;
-	top: 5vh;
+	top: 0;
+	max-height: 650px;
 }
 }
 
@@ -129,6 +131,9 @@ p{
 .servicios{
 	margin-top: 10%;
 	padding-top: 150px;
+	background-image: linear-gradient(180deg, rgba(0,255,255,0), rgba(255,255,255,1));
+	z-index: 5000;
+
 }
 
 @media screen and (min-width: 768px){
@@ -139,14 +144,14 @@ p{
 	left: 20vw;
 	line-height: 1em;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 1.5em;
 	margin-bottom: 0;
 	}
 } 
 
 #palabra{
 	font-family: 'shabby'; 
-	font-size: 3rem; 
+	font-size: 2em; 
 	line-height: 1em; 
 	margin-bottom: -2.5%;
 }
@@ -155,14 +160,14 @@ p{
 	.texto-banner{
 	position: absolute;
 	top: 30vh;
-	right: 35vw;
+	right: 20vw;
 	left: 20vw;
 	line-height: 1em;
-	text-align: left;
-	font-size: 0.3em !important;
+	text-align: center;
+	font-size: 0.2em !important;
 	}
 	#palabra{
-		font-size: 1.8rem !important;
+		font-size: 10em !important;
 	}
 }
 
@@ -170,3 +175,35 @@ p{
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 } 
+
+.pintura {
+  text-align: center;
+  color: white;
+  background-image: url("../img/bg-expertise.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px){
+	.margin-nosotros{
+		margin-top: 300px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.margin-nosotros{
+		margin-top: 200px;
+	}
+}
+
+.equipo{
+	background-image: url('../img/equipo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	width: 100%;
+
+}
