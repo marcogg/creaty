@@ -179,7 +179,7 @@ p{
 .pintura {
   text-align: center;
   color: white;
-  background-image: url("../img/bg-expertise.jpg");
+  background-image: url("../img/bg-expertise.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -210,5 +210,5 @@ p{
 
 .contacto{
 	background-color: rgba(255,255,255,0.4);
-    padding: 5%;
+    padding: 3%;
 }
