@@ -604,14 +604,26 @@ section#contact {
   background-attachment: fixed;
   background-size: cover;
 }
-
-section#portfolio {
+@media screen and (min-width: 768px){
+  section#portfolio {
   background-image: url("../img/bg-expertise3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
+}
+
+@media screen and (max-width: 768px){
+  section#portfolio {
+  background-image: url("../img/bg-expertise3_mov.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+}
+
 
 section#contact .section-heading {
   color: #fff;
