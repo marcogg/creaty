@@ -40,8 +40,48 @@
 		<link rel="shortcut icon" type="image/png" href="img/logos/favicon.png"/>
 		<!--Google Adsense-->
 		<script data-ad-client="ca-pub-5440884351584487" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1250413395326121');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1250413395326121&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 	</head>
 	<body id="page-top" onload="frase()">
+		<!-- BEGIN: PRELOADER -->
+		<div class="preloaderbg">
+			<div class="spinner-border text-light" role="status">
+		  		<span class="sr-only">Cargando...</span>
+			</div>
+		</div>
+		<!-- END:PRELOADER -->
+		<!-- BEGIN: WHATSAPP BUTTON -->
+        <div style="background-color:#02a047; width: 70px; height:70px; border-radius: 50%; position:fixed; top: 87vh; right: 5px; z-index:50000; display: block; ">
+            <div style="margin: auto; display: block; position: relative; left: 18%; top: 13%">
+                <a href="https://wa.me/526566036947">
+                    <img src="img/whatsapp-outline-01.png" alt="Whatsapp" style="width: 47px !important">
+                </a>
+            </div>
+        </div>
+        <!-- END: WHATSAPP BUTTON -->
+        <!-- BEGIN: Sliding effects -->
+        <div class="bg"></div>
+		<div class="bg bg2"></div>
+		<div class="bg bg3"></div>
+		<!-- END:Sliding Effects -->
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 			<div class="container">
@@ -78,8 +118,8 @@
 		<header class="masthead background-element">
 			<div class="container">
 				<div class="intro-text mx-auto">
-					<div class="imagen-chava">
-						<img src="img/chava.png" class="chava">
+					<div class="imagen-chava" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"data-aos-delay="300" data-aos-offset="0">
+						<img src="img/chava2.png" class="chava">
 					</div>
 					<div class="row">
 						<div id="raya-izq" class="col-lg-1 col-md-1"></div>
@@ -99,76 +139,76 @@
 		<!-- Services -->
 		<section id="services" class="servicios">
 			<div class="container">
-				<div class="row mt-5">
+				<div class="row m-5"´data-aos="fade-up">
 					<div class="col-md-2"></div>
-					<div class="col-lg-8 col-md-8 col-sm-12 text-center" style="background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 27%);">
-						<h2 class="section-heading text-uppercase">Expertise</h2>
-						<h2 style="font-family: 'Titillium Web';">Pensando fuera de la caja</h2>
-						<p>Conjuntamos todas las áreas creativas en un solo lugar para que  tu empresa logre el impacto que necesitas para <span class="text-uppercase"><strong>vender más</strong></span></p>
+					<div class="col-lg-8 col-md-8 col-sm-12 text-center">
+						<h2 class="section-heading text-uppercase text-white">Mucho más de lo que esperas</h2>
+						<h2 style="font-family: 'Titillium Web';" class="text-light">de una agencia de marketing</h2>
+						<p class="text-muted">Conjuntamos todas las áreas creativas en un solo lugar para que  tu empresa logre el impacto que necesitas para <span class="text-uppercase"><strong>vender más</strong></span></p>
 					</div>
 					<div class="col-md-2"></div>
 				</div>
 				<div class="row text-center px-5">
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-right">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Digital</h4>
-						<p class="text-muted">Todo lo que tu empresa necesita en el mundo digital: logotipos, páginas web, redes sociales, videos, animaciones y hasta Web Apps y aplicaciones móviles...</p>
+						<h4 class="service-heading text-white">Digital</h4>
+						<p class="text-muted">Todo lo que tu empresa necesita en el mundo digital: logotipos, páginas web, redes sociales, videos, animaciones y hasta <strong>Web Apps y aplicaciones móviles</strong></p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-left">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Publicidad</h4>
+						<h4 class="service-heading text-white">Publicidad</h4>
 						<p class="text-muted">Diseñamos estrategias en medios digitales (ADWORDS, SEO, SEM) y medios tradicionales ATL y BTL</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-right">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="far fa-smile fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Inbound marketing</h4>
+						<h4 class="service-heading text-white">Inbound marketing</h4>
 						<p class="text-muted">Generamos contenido relevante y de calidad para fidelizar a tus clientes y enamorarlos de tu marca.</p>
 					</div>
 				</div>
 				<div class="row text-center">
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-left">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-pencil-ruler fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Arquitectura</h4>
+						<h4 class="service-heading text-white">Arquitectura</h4>
 						<p class="text-muted">Ya sea para tu casa o para tu negocio, hacemos desde trazado de planos, hasta renderizado y renders fotorealistas, supervisión de obra y más</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-right">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-users fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Eventos</h4>
+						<h4 class="service-heading text-white">Eventos</h4>
 						<p class="text-muted">Una junta de trabajo, una fiesta de fin de año, o un evento de lanzamiento, planeamos y gestionamos tus eventos con una dosis creativa. </p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-left">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="far fa-smile fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Experiencias de marca</h4>
+						<h4 class="service-heading text-white">Experiencias de marca</h4>
 						<p class="text-muted">Que tus clientes vivan tu marca con espacios temporales y/o permanentes. Diseño de eventos, escenografías, diseño de locales, ambientaciones...</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Portfolio Grid -->
-		<section class="px-4" id="portfolio" style="">
+		<section class="px-4" id="portfolio"  data-aos="flip-up">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-						<h1 class="section-heading text-uppercase" style="font-size:36pt;">Servicios</h1>
-						<p class="section-subheading" style="font-size:20pt;">Todas las soluciones en un solo lugar.</p>
+						<h1 class="section-heading text-uppercase text-white" style="font-size:36pt;">Servicios</h1>
+						<p class="section-subheading text-white" style="font-size:20pt;">Todas las soluciones en un solo lugar.</p>
 					</div>
 				</div>
 				<div class="row" style="color: #777777;">
@@ -183,7 +223,7 @@
 						</a>
 						<div class="portfolio-caption">
 							<h4>Páginas Web</h4>
-							<p class="text-muted">Responsivas, veloces y eficientes. ¡Ten presencia digital!</p>
+							<p class="text-muted">¡Ten presencia digital!</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-12 portfolio-item">
@@ -197,7 +237,7 @@
 						</a>
 						<div class="portfolio-caption">
 							<h4>Redes Sociales</h4>
-							<p class="text-muted">Te hacemos más visible en las redes sociales</p>
+							<p class="text-muted">Haz ruido en las redes sociales</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-12 portfolio-item">
@@ -211,7 +251,7 @@
 						</a>
 						<div class="portfolio-caption">
 							<h4>Diseño de espacios</h4>
-							<p class="text-muted">Diseño interior, renderizado, seguimiento de obra</p>
+							<p class="text-muted">Diseño interior, renders y más</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-12 portfolio-item">
@@ -225,7 +265,7 @@
 						</a>
 						<div class="portfolio-caption">
 							<h4>Aplicaciones</h4>
-							<p class="text-muted">Aplicaciones híbridas y nativas para Android y iOS.</p>
+							<p class="text-muted">Web Apps con optimización UX/UI</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-12 portfolio-item">
@@ -238,7 +278,7 @@
 							<img class="img-fluid" src="img/portfolio/grafico.jpg" alt="">
 						</a>
 						<div class="portfolio-caption">
-							<h4>Diseño gráfico y audiovisual</h4>
+							<h4>Diseño</h4>
 							<p class="text-muted">Videos, logotipos, publicidad y más</p>
 						</div>
 					</div>
@@ -252,24 +292,32 @@
 							<img class="img-fluid" src="img/portfolio/stands.jpg" alt="">
 						</a>
 						<div class="portfolio-caption">
-							<h4>Desarrollo de stands</h4>
-							<p class="text-muted">Diseñamos espacios efímeros para expos, puntos de venta y más</p>
+							<h4>Stands</h4>
+							<p class="text-muted">Diseñamos espacios para expos, POP y más</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- About -->
-		<section id="about" class="bg-dark" style="padding: 0 !important;">
-			<div class="container-full">
-				<div class="row">
+		<!-- Nosotros -->
+		<section id="about" class="" style="padding: 0 !important;" data-aos="zoom-in">
+			<div class="container">
+				<div class="row pt-3">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center py-5 px-5">
 						<h1 class="section-heading text-uppercase text-white">Nosotros</h1>
-						<p class="section-subheading text-white" style="font-size: 1.35em;">Lo que nos hace diferentes es la <b>pasión</b> que imprimimos en cada proyecto y en <b>darte el mejor servicio</b>; entendiendo tus necesidades y tu presupuesto  para que <span class="text-uppercase"><b>logremos tus objetivos</b></span> y así <span class="text-uppercase">crezcamos juntos.</span></p>
+						<p class="section-subheading text-white" style="font-size: 1.35em; line-height: 1.45rem;">Lo que nos hace diferentes es la <strong>pasión</strong> que imprimimos en cada proyecto y en <b>darte el mejor servicio</b>; entendiendo tus necesidades y tu presupuesto  para que <span class="text-uppercase"><b>logremos tus objetivos</b></span> y así <span class="text-uppercase">crezcamos juntos.</span></p>
+						<a href="https://wa.me/525530388534" class="btn btn-danger btn-block">Quiero vender más</a>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 equipo">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<img src="img/nos-ponemos-tu-camiseta.png" alt="Nos ponemos tu camiseta" class="img-responsive d-block m-auto">
 					</div>
 				</div>
+				
+			</div>
+		</section>
+		<!-- VIDEO -->
+		<section data-aos="zoom-in-down" style="margin-top: -50px;">
+			<div class="container-full">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 						<video playsiline autoplay loop muted controls preload style="width: 100%;">
@@ -280,62 +328,103 @@
 				</div>
 			</div>
 		</section>
-		<!-- Team -->
-		<section class="bg-light" id="team">
+		<!-- Clients -->
+		<section class="py-5" id="team" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading text-uppercase">Algunos de nuestros clientes</h2>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8 text-center">
+						<h2 class="section-heading text-uppercase text-white">Algunos de nuestros clientes</h2>
 						<p class="section-subheading text-muted">Conviértete en parte de esta creciente familia que aplica la <b>creatyvidad</b> en su empresa y los ayuda a vender más.</p>
 					</div>
+					<div class="col-lg-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/espn.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/gnp.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/segundamano.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/wacom.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/americanet.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/estacioncereal.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/anahuac.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-6 col-6 my-3">
+						<a href="#">
+							<img class="img-fluid d-block mx-auto" src="img/logos/hodaya.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-2"></div>
 				</div>
 			</div>
+			<div class="row mt-5">
+				<div class="col-lg-12">
+					<h2 class="text-primary text-center" style="font-size: 2rem;"> Y más de 100 PyME's </h2>
+					<p style="font-size: 1rem;" class="text-center text-white">a lo largo de casi 10 años de experiencia</p>
+				</div>	
+			</div>
 		</section>
-		<!-- Clients -->
-		<section class="py-5">
+		<section id="testimonios" data-aos="flip-left">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/espn.jpg" alt="">
-						</a>
+					<div class="col-lg-8">
+						<h2 class="text-muted" style="font-size: 3.5rem;">¿Aún no te convences?</h2>
+						<p class="text-white">Mira estos <strong>Testimonios</strong> y convéncete por qué somos la mejor opción para crecer tu negocio</p>
+						<a href="https://wa.me/525530388534?text=Hola%20Marco,%20me%20interesa%20un%20descuento%20en%20mi%20sitio%20web" class="btn btn-warning btn-block"><i class="fab fa-whatsapp"></i> Quiero vender más</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/kml.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/segundamano.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/gnp.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/edisa.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/americanet.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/herrelectric.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-6 my-3">
-						<a href="#">
-							<img class="img-fluid d-block mx-auto" src="img/logos/aa.jpg" alt="">
-						</a>
+					<div class="col-lg-4" style="padding: 3%;">
+						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/testimonios/testimonios.png" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/testimonios/testimonios3.png" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/testimonios/testimonios2.png" class="d-block w-100" alt="...">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -346,8 +435,8 @@
 				<div class="contacto forefront-element">
 					<div class="row">
 						<div class="col-lg-12 text-center">
-							<h2 class="section-heading text-uppercase" style="color:#2f2f2f!important;">Contáctanos</h2>
-							<p class="section-subheading text-white mb-5" style="color:#2f2f2f!important;">Déjanos tus datos y en breve te contactaremos</p>
+							<h2 class="section-heading text-uppercase" style="color:#2f2f2f!important; font-size: 3rem;">Contáctanos</h2>
+							<p class="section-subheading text-white mb-5" style="color:#2f2f2f!important; font-size: 2rem;">Déjanos tus datos y en breve te contactaremos</p>
 						</div>
 					</div>
 					<div class="row">
@@ -391,22 +480,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<span class="copyright">Copyright &copy; Creaty 2019</span>
+						<span class="copyright">Copyright &copy; Creaty 2020</span>
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline social-buttons">
 							<li class="list-inline-item">
-								<a href="#">
-									<i class="fab fa-twitter"></i>
+								<a href="https://www.instagram.com/creatymx/">
+									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="#">
+								<a href="https://www.facebook.com/creatymx">
 									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="#">
+								<a href="https://www.linkedin.com/company/creaty-mx/">
 									<i class="fab fa-linkedin-in"></i>
 								</a>
 							</li>
@@ -415,13 +504,51 @@
 					<div class="col-md-4">
 						<ul class="list-inline quicklinks">
 							<li class="list-inline-item">
-								<a href="#">Aviso de Privacidad</a>
+								<a href="aviso-de-privacidad.html">Aviso de Privacidad</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<!-- BEGIN: MODAL CALL TO ACTION -->
+		<!-- Modal -->
+			<div class="modal fade" id="modalCalltoAction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content" style="background-color: transparent; border: none;">
+			      <!-- <div class="modal-header">
+			        <h5 class="modal-title text-center" id="exampleModalLabel">¡No hay tiempo que perder!</h5>
+			      </div> -->
+			      <div class="modal-body">
+			        <div class="container">
+			        	<div class="row">
+			        		<div class="col-lg-6 col-md-6 col-sm-12 col-12 descuentositio">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        			</button>
+			        			<i class="fas fa-laptop fa-3x" style="color: yellow;"></i>
+			        			<h3 style="font-size: 1.35rem;" class="mt-2 mb-3">Obtén un descuento en tu ecommerce o sitio web</h3>
+			        			<a href="https://wa.me/525530388534?text=Hola%20Marco,%20me%20interesa%20un%20descuento%20en%20mi%20sitio%20web" class="btn btn-warning btn-block">Quiero mi descuento</a>
+			        		</div>
+			        		<div class="col-lg-6 col-md-6 col-sm-12 col-12 descuentoredes">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        			</button>
+			        			<i class="far fa-thumbs-up fa-3x" style="color: #8a8a8a;"></i>
+			        			<h3 style="font-size: 1.35rem;" class="text-muted mt-2 mb-3">Obtén un descuento en tus redes sociales</h3>
+			        			<a href="https://wa.me/525530388534?text=Hola%20Marco,%20me%20interesa%20un%20descuento%20en%20mis%20redes%20sociales" class="btn btn-warning btn-block">Quiero vender más</a>
+			        		</div>
+			        	</div>
+			        </div>
+			      </div>
+			      <!-- <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div> -->
+			    </div>
+			  </div>
+			</div>
+		<!-- END: MODAL CALL TO ACTION -->
 		<!-- Portfolio Modals -->
 		<!-- Modal 1 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -456,11 +583,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 									<!--<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -503,11 +630,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 									<!--<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -553,11 +680,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 								</div>
@@ -597,11 +724,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 								</div>
@@ -650,11 +777,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 								</div>
@@ -699,11 +826,11 @@
 										</div>
 										<a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
+											<span class="sr-only">Anterior</span>
 										</a>
 										<a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
+											<span class="sr-only">Siguiente</span>
 										</a>
 									</div>
 								</div>
@@ -726,21 +853,11 @@
 		<script type="text/javascript" src="js/efecto.js"></script>
 		<!--EFECTO PALABRA HEADER-->
 		<script type="text/javascript">
-		/*var servicios=["Marketing", "Desarrollo Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Ideas"];
-		var texto;
-		var i;
-		var contador=0;
-		function frase() {
-		for (i =0; i<servicios.length; i++) {
-		setInterval(leer, 1500);
-		function leer () {
-		texto=servicios[i];
-		document.getElementById("palabra").innerHTML=texto;
-		}
-		
-		}
-		}*/
-		
+		// Modal Call to Action
+		setTimeout(function() {
+    		$('#modalCalltoAction').modal();
+		}, 7000);
+		// Header animation
 		$(function () {
 		count = 0;
 		wordsArray = ["Marketing", "Diseño Web", "Publicidad", "Redes Sociales", "Diseño", "Eventos", "Interiorismo", "Branding","Web Apps","Videos", "Arquitectura", "Ideas" ];
@@ -767,5 +884,10 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/56750893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<!-- ANIMATE ON SCROLL -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 	</body>
 </html>

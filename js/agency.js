@@ -47,4 +47,15 @@
     $('.navbar').removeClass('d-none');
   })
 
+  // PRELOADER
+// $('window').on('load', function(){
+//   event.preventDefault()
+//   $('.preloader').fadeOut('slow');
+// });
+
+$(window).on('load', function() {
+  $('.preloader').delay(1000).fadeOut(300);
+});
 })(jQuery); // End of use strict
+
+
